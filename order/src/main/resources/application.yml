@@ -1,0 +1,5 @@
+spring.application.name: order
+
+management.endpoint.shutdown.enabled: true
+
+eureka.client.service-url.defaultZone: http://localhost:10000/eureka

@@ -1,0 +1,7 @@
+spring.application.name: user
+
+eureka.instance.initial-status: OUT_OF_SERVICE
+
+management.endpoint.shutdown.enabled: true
+
+eureka.client.service-url.defaultZone: http://localhost:10000/eureka
