@@ -30,18 +30,4 @@ public class UserServerLauncher {
         u.setName("demo");
         return u;
     }
-
-    @RequestMapping(value = "/out-of-service")
-    public void outOfService() {
-        InstanceInfo instance = cloudEurekaClient.getApplicationInfoManager().getInfo();
-        cloudEurekaClient.setStatus(InstanceInfo.InstanceStatus.OUT_OF_SERVICE, instance);
-    }
-
-    @RequestMapping(value = "/up")
-    public void up() {
-        InstanceInfo instance = cloudEurekaClient.getApplicationInfoManager().getInfo();
-        cloudEurekaClient.setStatus(InstanceInfo.InstanceStatus.UP, instance);
-    }
-
-
 }
